@@ -1,48 +1,34 @@
-// Name of the app
 package com.example.lecture1;
 
-// Stores keys and values (data) temp memory space
 import android.content.Intent;
-import android.icu.text.DateFormat;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.EditText;
 
-// Shows app in full screen
 import androidx.activity.EdgeToEdge;
-// Controls the app activities lifecycles
 import androidx.appcompat.app.AppCompatActivity;
-// Not important lol
 import androidx.core.graphics.Insets;
-// Automatically charge layout
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import java.util.Date;
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity3 extends AppCompatActivity {
 
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
-
-
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        //R means ressource
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main3);
 
-        final Button button = findViewById(R.id.button);
-        final TextView textView = findViewById(R.id.textView);
+        final EditText editTextMessage = findViewById(R.id.editTextMessage);
+        Button buttonSend = findViewById(R.id.buttonSend);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        buttonSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String currentDateTime = DateFormat.getTimeInstance().format(new Date());
-                textView.setText(currentDateTime);
-
-                Intent intent = new Intent(MainActivity.this, MainActivity3.class);
+                String message = editTextMessage.getText().toString();
+                Intent intent = new Intent(MainActivity3.this, MainActivity4.class);
+                intent.putExtra("MESSAGE", message);
                 startActivity(intent);
             }
         });
