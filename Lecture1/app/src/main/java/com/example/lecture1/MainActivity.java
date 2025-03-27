@@ -2,6 +2,7 @@
 package com.example.lecture1;
 
 // Stores keys and values (data) temp memory space
+import android.content.Intent;
 import android.icu.text.DateFormat;
 import android.os.Bundle;
 import android.view.View;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
 
+
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         //R means ressource
@@ -39,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String currentDateTime = DateFormat.getTimeInstance().format(new Date());
                 textView.setText(currentDateTime);
+
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(intent);
             }
         });
 
