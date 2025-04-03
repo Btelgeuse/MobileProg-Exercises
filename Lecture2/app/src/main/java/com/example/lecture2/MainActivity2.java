@@ -1,8 +1,6 @@
 package com.example.lecture2;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ScrollView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,24 +8,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
-public class MainActivity3 extends AppCompatActivity {
+public class MainActivity2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main3);
-
-        Fragment1 fragment1 = new Fragment1();
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragment_container3, fragment1).commit();
-
-        Fragment2 fragment2 = new Fragment2();
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragment_container4, fragment2).commit();
-
+        setContentView(R.layout.activity_main2);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

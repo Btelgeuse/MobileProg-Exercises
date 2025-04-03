@@ -10,7 +10,8 @@
     <ScrollView
         android:id="@+id/scrollview1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -175,17 +176,16 @@
 
     </ScrollView>
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
-            android:layout_width="46dp"
-            android:layout_height="56dp"
-            android:clickable="true"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
-            app:backgroundTint="@color/gray_pink"
-            app:layout_anchor="@id/scrollview1"
-            app:layout_anchorGravity="bottom|end|right"
-            android:contentDescription="TODO"
-            tools:ignore="MissingConstraints"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="46dp"
+        android:layout_height="56dp"
+        android:clickable="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:backgroundTint="@color/gray_pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="Floating Action Button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

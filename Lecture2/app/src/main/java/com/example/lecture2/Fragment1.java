@@ -26,11 +26,10 @@ public class Fragment1 extends Fragment {
         Button editButton = view.findViewById(R.id.edit_button);
         editButton.setOnClickListener(v -> {
             Toast.makeText(getActivity(), "Edit profile clicked", Toast.LENGTH_SHORT).show();
+            //Intent to go back to MainActivity
+            Intent intent = new Intent(getActivity(), MainActivity.class);
+            startActivity(intent);
         });
-
-        //Intent to go back to MainActivity
-        Intent intent = new Intent(getActivity(), MainActivity.class);
-        startActivity(intent);
 
         return view;
     }
