@@ -6,14 +6,186 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    
+    <ScrollView
+        android:id="@+id/scrollview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="40dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/fig3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Taylor Brooks"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="start"
+                app:layout_constraintTop_toBottomOf="@+id/profile_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="50dp"/>
+            
+            <TextView
+                android:id="@+id/text_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Display name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="start"
+                app:layout_constraintTop_toBottomOf="@id/profile_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="32dp"/>
+            
+            <EditText
+                android:id="@+id/edit_text_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:background="@null"
+                android:hint="Enter your name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_1"
+                android:textColor="@android:color/darker_gray"
+                android:textColorHint="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/text_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="start"
+                app:layout_constraintTop_toBottomOf="@id/edit_text_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/edit_text_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:background="@null"
+                android:hint="Enter your status"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_2"
+                android:textColor="@android:color/darker_gray"
+                android:textColorHint="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/text_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="start"
+                app:layout_constraintTop_toBottomOf="@id/edit_text_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/edit_text_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:background="@null"
+                android:hint="Enter your status"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_3"
+                android:textColor="@android:color/darker_gray"
+                android:textColorHint="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/text_view_timezone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Timezone"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="start"
+                app:layout_constraintTop_toBottomOf="@id/edit_text_3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/edit_text_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:background="@null"
+                android:hint="Enter your Twitter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_timezone"
+                android:textColor="@android:color/darker_gray"
+                android:textColorHint="@android:color/darker_gray"/>
+
+            <Button
+                android:id="@+id/message_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Submission"
+                android:textColor="#FFF"
+                android:backgroundTint="#708090"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_text_4"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="46dp"
+            android:layout_height="56dp"
+            android:clickable="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:backgroundTint="@color/gray_pink"
+            app:layout_anchor="@id/scrollview1"
+            app:layout_anchorGravity="bottom|end|right"
+            android:contentDescription="TODO"
+            tools:ignore="MissingConstraints"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
