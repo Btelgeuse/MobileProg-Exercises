@@ -3,4 +3,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gray_pink">#CCBDBD</color>
+    <color name="lavender_background">#967bb6</color>
+    <color name="cream_background">#fdf1b8</color>
 </resources>
