@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Lab1</string>
+    <string name="welcome_to_baked_cakey">Welcome to Baked Cakey!</string>
+    <string name="select_your_favorite_cakeys_3"><![CDATA[Select your favorite cakeys <3]]></string>
+    <string name="chocolate_chip_cookies_2">Chocolate Chip Cookies (2€)</string>
+    <string name="red_strawberry_cookies_3">Red Strawberry Cookies (3€)</string>
+    <string name="pink_purfect_cake_6">Pink Purfect Cake (6€)</string>
+    <string name="mango_sticky_cake_4">Mango Sticky Cake (4€)</string>
+    <string name="fluffy_pancakes_7">Fluffy Pancakes (7€)</string>
+    <string name="finish_my_order">Finish my order</string>
+    <string name="ice_cream_waffle_7">Ice Cream Waffle (7€)</string>
+    <string name="matcha_sponge_cake_10">Matcha Sponge Cake (10€)</string>
+    <string name="vanilla_cheesecake_10">Vanilla Cheesecake (10€)</string>
+    <string name="tutti_frutti_charlotte_12">Tutti Frutti Charlotte (12€)</string>
+    <string name="your_order">Your order</string>
+    <string name="total">Total:</string>
+    <string name="choose_your_payment_method">Choose your payment method:</string>
 </resources>
