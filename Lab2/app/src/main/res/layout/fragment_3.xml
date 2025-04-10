@@ -1,0 +1,143 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Fragment1">
+
+    <!-- ScrollView to enable scrolling -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Use a LinearLayout or other layout inside ScrollView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/select_question_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mental Health - Select all symptoms you are experiencing:"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="16dp"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:background="@color/background_teal"
+                tools:ignore="MissingConstraints"/>
+
+            <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Frequent feelings of sadness or hepolessness (+5)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/select_question_title"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Difficulty concentrating or focusing (+3)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox1"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Frequent mood swings (+4)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox2"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Persistent anxiety or nervousness (+5)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox3"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feeling overwhelmed or unable to cope (+5)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox4"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lack of interest in activities once enjoyed (+3)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox5"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sleep disturbances (too much or too little) (+3)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox6"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Frequent irritability (+2)"
+                app:layout_constraintTop_toBottomOf="@id/checkbox7"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive social intercations or support (-3)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox8"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Practicing mindfulness or relaxation techniques (-2)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox9"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Engaging in enjoyable activities regularly (-4)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox10"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:text="Submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/checkbox11"
+                android:layout_marginTop="16dp"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

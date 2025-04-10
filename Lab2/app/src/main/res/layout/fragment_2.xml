@@ -1,0 +1,251 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Fragment1">
+
+    <!-- ScrollView to enable scrolling -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Use a LinearLayout or other layout inside ScrollView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/select_question_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Physical Health - Select all symptoms you are experiencing:"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="16dp"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:background="@color/background_teal"
+                tools:ignore="MissingConstraints"/>
+
+            <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Severe difficulty breathing (+10)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/select_question_title"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Severe chest pain (+10)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox1"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Extreme fatigue (+5)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox2"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confusion or disorientation (+8)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox3"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loss of consciousness (+10)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox4"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Persistent high fever (+7)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox5"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dry cough (+5)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox6"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sore throat (+3)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox7"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loss of sense of taste or smell (+5)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox8"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Headache (+2)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox9"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Muscle or joint pain (+2)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox10"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Runny or stuffy nose (+1)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox11"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nausea or vomiting (+4)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox12"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diarrhea (+4)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox13"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chills or shivers (+3)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox14"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abdominal pain (+5)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox15"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Skin rash (+2)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox16"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Red or irritated eyes (+2)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox17"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Difficulty sleeping (+1)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox18"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maintaining regular physical activity (-5)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox19"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eating a balanced diet (-4)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox20"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Staying hydrated (-3)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox21"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/checkbox23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Getting adequate sleep (7-9 hours) (-3)"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/checkbox22"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:text="Submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/checkbox23"
+                android:layout_marginTop="16dp"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
