@@ -24,26 +24,18 @@ public class Fragment1 extends Fragment {
         //Physical button leading to fragment 2
         Button physicalBtn = view.findViewById(R.id.physical_btn);
         physicalBtn.setOnClickListener(v -> {
-            // Create an instance of Fragment2
             Fragment2 fragment2 = new Fragment2();
-            // Begin a fragment transaction
             FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-            // Replace Fragment1 with Fragment2
             transaction.replace(R.id.fragment_container, fragment2);
-            // Commit the transaction
             transaction.commit();
         });
 
         //Mental button leading to fragment 3
         Button mentalBtn = view.findViewById(R.id.mental_btn);
         mentalBtn.setOnClickListener(v -> {
-            // Create an instance of Fragment2
             Fragment3 fragment3 = new Fragment3();
-            // Begin a fragment transaction
             FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-            // Replace Fragment1 with Fragment2
             transaction.replace(R.id.fragment_container, fragment3);
-            // Commit the transaction
             transaction.commit();
         });
 
